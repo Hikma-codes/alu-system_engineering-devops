@@ -1,5 +1,5 @@
-
-adbalancer Setup for Your Servers
+#!/usr/bin/env bash
+# Loadbalancer Setup for Your Servers
 
 sudo apt-get update -y
 
@@ -39,6 +39,7 @@ backend web_servers
     server 6470-web-01 3.94.54.124 check
     server 6470-web-02 18.212.186.27 check
 EOL
+
 
 # Restart HAProxy service
 sudo service haproxy restart
